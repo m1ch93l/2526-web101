@@ -5,12 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
+	<style>
+		.container {
+			display: flex;
+			justify-content: start;
+		}
+		.card {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-top: 50px;
+		}
+		input {
+			padding: 20px;
+		}
+		button {
+			padding: 20px;
+			background-color: gray;
+		}
+	</style>
 	<body>
 		<div class="container">
 			<div class="card">
 				<input type="text" placeholder="Username" />
 				<input type="password" placeholder="Password" />
-				<button class="btn">Login</button>
+				<button>Login</button>
 			</div>
 		</div>
 	</body>
