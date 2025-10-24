@@ -6,33 +6,55 @@
 		<title>Document</title>
 	</head>
 	<style>
-		.container {
-			display: flex;
-			justify-content: center;
+		.btn1 {
+			padding: 10px;
+			border-radius: 20px;
+			background-color: rgb(255, 179, 0);
+			color: white;
+			box-shadow: black 5px 5px 3px;
+			cursor: pointer;
 		}
-		.flex-container {
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-			border: 1px solid #ccc;
-			padding: 20px;
-			width: 500px;
+		.modal {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.4);
 		}
-		input {
+		.modal-content {
+			background-color: #fefefe;
+			margin: 15% auto;
 			padding: 20px;
-		}
-		button {
-			padding: 20px;
-			background-color: gray;
+			border: 5px solid #b76969;
+			width: 80%;
+			border-radius: 20px;
 		}
 	</style>
 	<body>
-		<div class="container">
-			<div class="flex-container">
-				<input type="text" placeholder="Username" />
-				<input type="password" placeholder="Password" />
-				<button>Login</button>
+		<button id="showModal" class="btn1">Modal</button>
+		<button id="alertbutton" class="btn1">Alert</button>
+
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<h2>Modal Header</h2>
+				<p>Modal Body</p>
+				<span id="closeModal" class="close">Close</span>
 			</div>
 		</div>
 	</body>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.getElementById("showModal").addEventListener("click", () => {
+				document.getElementById("myModal").style.display = "block";
+			});
+			document.getElementById("closeModal").addEventListener("click", () => {
+				document.getElementById("myModal").style.display = "none";
+			});
+			document.getElementById("alertbutton").addEventListener("click", () => {
+				alert("This is an alert!");
+			});
+		});
+	</script>
 </html>
