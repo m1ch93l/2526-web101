@@ -14,47 +14,24 @@
 			box-shadow: black 5px 5px 3px;
 			cursor: pointer;
 		}
-		.modal {
+		.box {
 			display: none;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.4);
-		}
-		.modal-content {
-			background-color: #fefefe;
-			margin: 15% auto;
-			padding: 20px;
-			border: 5px solid #b76969;
-			width: 80%;
-			border-radius: 20px;
 		}
 	</style>
 	<body>
-		<button id="showModal" class="btn1">Modal</button>
-		<button id="alertbutton" class="btn1">Alert</button>
+		<button id="show" class="btn1">show</button>
+		<button id="close" class="btn1">hide</button>
 
-		<div id="myModal" class="modal">
-			<div class="modal-content">
-				<h2>Modal Header</h2>
-				<p>Modal Body</p>
-				<span id="closeModal" class="close">Close</span>
-			</div>
+		<div id="box" class="box">
+			<h1>SURPRIZE</h1>
 		</div>
 	</body>
 	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-			document.getElementById("showModal").addEventListener("click", () => {
-				document.getElementById("myModal").style.display = "block";
-			});
-			document.getElementById("closeModal").addEventListener("click", () => {
-				document.getElementById("myModal").style.display = "none";
-			});
-			document.getElementById("alertbutton").addEventListener("click", () => {
-				alert("This is an alert!");
-			});
+		document.getElementById("show").addEventListener("click", () => {
+			document.getElementById("box").style.display = "block";
+		});
+		document.getElementById("close").addEventListener("click", () => {
+			document.getElementById("box").style.display = "none";
 		});
 	</script>
 </html>
