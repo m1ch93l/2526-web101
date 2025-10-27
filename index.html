@@ -5,37 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
-	<style>
-		.btn1 {
-			padding: 10px;
-			border-radius: 20px;
-			background-color: rgb(255, 179, 0);
-			color: white;
-			box-shadow: black 5px 5px 3px;
-			cursor: pointer;
-		}
-		.btn1:hover {
-			background-color: rgb(255, 255, 255);
-			color: rgb(34, 0, 185);
-		}
-		.box {
-			display: none;
-		}
-	</style>
 	<body>
-		<button id="show" class="btn1">show</button>
-		<button id="close" class="btn1">hide</button>
+		<button id="show">Click Me!</button>
 
-		<div id="box" class="box">
-			<h1>SURPRIZE</h1>
-		</div>
+		<p id="box">
+			Hello World
+		</p>
 	</body>
 	<script>
 		document.getElementById("show").addEventListener("click", () => {
-			document.getElementById("box").style.display = "block";
-		});
-		document.getElementById("close").addEventListener("click", () => {
-			document.getElementById("box").style.display = "none";
+			document.getElementById("box").innerHTML = "Hello ACT 2C";
 		});
 	</script>
 </html>
