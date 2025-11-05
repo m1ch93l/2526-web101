@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <form action="checkuser.php" method="post">
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit">
+    <form action="check.php" method="post">
+        <input type="text" name="un" placeholder="Username">
+        <input type="password" name="pw" placeholder="Password">
+        <button type="submit"> Submit </button>
     </form>
 </body>
 
