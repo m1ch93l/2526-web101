@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna's Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>This is my HTML and CSS project!</p>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Donna Caraballo</strong>, learning how to design webpages using HTML and CSS. This project shows my basic skills and creativity.</p>
+    </section>
+
+    <section class="hobbies">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>🎮 Playing games</li>
+        <li>🎧 Listening to music</li>
+        <li>💻 Coding</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <strong>Donna Caraballo</strong> © 2025</p>
+  </footer>
+</body>
+</html>
